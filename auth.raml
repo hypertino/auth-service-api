@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: Authorization API
+version: v1
+mediaType: application/json
+baseUri: hb://auth
+
+types:
+  Validation:
+    properties:
+      authorization:
+        type: string
+        description: Authorization header value
+
+/validations:
+  post:
+    body:
+      type: Validation
+      example: {"authorization": "Basic QWxhZGRpbjpPcGVuU2VzYW1l"}
+    responses:
+      201:
+        body:
+          type: object
+          example: { "username": "Aladdin", "user_id": "100500" }
