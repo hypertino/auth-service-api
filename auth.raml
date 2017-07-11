@@ -11,6 +11,13 @@ types:
         type: string
         description: Authorization header value
 
+  ValidationResult:
+    properties:
+      identity_keys:
+        type: object
+      extra:
+        type: object
+
 /validations:
   post:
     body:
@@ -20,4 +27,4 @@ types:
       201:
         body:
           type: object
-          example: { "username": "Aladdin", "user_id": "100500" }
+          example: { "identity_keys": {"username": "Aladdin"}, "extra": {} }
