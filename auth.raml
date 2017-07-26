@@ -28,15 +28,3 @@ types:
         body:
           type: ValidationResult
           example: { "identity_keys": {"username": "Aladdin"}, "extra": {} }
-
-/privilege-validations:
-  post:
-    body:
-      type: Validation
-      example: {"authorization": "Basic QWxhZGRpbjpPcGVuU2VzYW1l"}
-    responses:
-      201:
-        body:
-          type: ValidationResult
-          example: { "identity_keys": {"username": "Aladdin"}, "extra": {} }
-  
