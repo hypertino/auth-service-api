@@ -1,5 +1,5 @@
 {
-  "name": "auth-service-api",
+  "name": "@hypertino/auth-service-api",
   "version": "0.1.0",
   "description": "Hypertino services authentication API",
   "scripts": {
