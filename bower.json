@@ -1,0 +1,10 @@
+{
+  "name": "auth-service-api",
+  "homepage": "https://github.com/hypertino/auth-service-api",
+  "authors": [
+    "Maga Abdurakhmanov <maqdev@gmail.com>"
+  ],
+  "description": "Shared authentication API for Hypertino",
+  "main": "auth.raml",
+  "license": "MPLv2"
+}
